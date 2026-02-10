@@ -35,18 +35,19 @@ export default function Navbar() {
     }, []);
 
     return (
-        <header className="w-full bg-white">
+        <header className="w-full bg-white shadow-md">
             <div className="mx-auto max-w-7xl px-4 py-3 flex flex-col md:grid md:grid-cols-3 md:items-center">
-
-                {/* Logo left */}
-                <div className="flex justify-between md:justify-start mb-4 md:mb-0">
+                {/* Logo & Mobile Contact */}
+                <div className="flex justify-between md:justify-start mb-4 md:mb-0 items-center">
                     <img src="/logo.png" alt="logo" className="w-40 md:w-60" />
 
+                    {/* Mobile Contact */}
                     <div className="md:hidden">
                         <Link
                             href="#contact"
                             className="inline-flex items-center gap-2 rounded-[15px] border border-[#40C351] bg-[#40C35126] px-4 py-2 text-sm font-medium text-[#40C351] hover:bg-[#40C35133]"
                         >
+                            {/* Phone Icon */}
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
@@ -70,32 +71,32 @@ export default function Navbar() {
                     </div>
                 </div>
 
-                {/* Offer & Countdown center */}
-                <div className="text-center md:text-center">
+                {/* Valentine Offer & Countdown */}
+                <div className="text-center">
                     <p
                         className="text-pink-500 font-semibold z-10"
-                        style={{ fontFamily: "'Dancing Script'", fontSize: "30px" }}
+                        style={{ fontFamily: "'Dancing Script'", fontSize: "1.8rem" }}
                     >
-                        Valentine’s offer
+                        Valentine’s Offer
                     </p>
-                    <p
-                        className="font-bold -mt-4"
-                        style={{ color: "blue", fontSize: "30px", lineHeight: "1" }}
-                    >
+                    <p className="font-bold text-blue-600 text-xl md:text-3xl -mt-2">
                         {`${timeLeft.days.toString().padStart(2, "0")} : ${timeLeft.hours
                             .toString()
                             .padStart(2, "0")} : ${timeLeft.minutes
                                 .toString()
-                                .padStart(2, "0")} : ${timeLeft.seconds.toString().padStart(2, "0")}`}
+                                .padStart(2, "0")} : ${timeLeft.seconds
+                                    .toString()
+                                    .padStart(2, "0")}`}
                     </p>
-                    <p className="text-[15px] font-bold text-black mt-1 flex justify-center gap-8">
+                    <div className="text-xs md:text-sm font-bold text-black mt-1 flex justify-center gap-4 md:gap-8">
                         <span>Days</span>
                         <span>Hrs</span>
                         <span>Min</span>
                         <span>Sec</span>
-                    </p>
+                    </div>
                 </div>
 
+                {/* Desktop Contact */}
                 <div className="hidden md:flex justify-end">
                     <Link
                         href="#contact"
@@ -122,7 +123,6 @@ export default function Navbar() {
                         Contact Sales
                     </Link>
                 </div>
-
             </div>
         </header>
     );
