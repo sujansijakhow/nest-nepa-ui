@@ -17,17 +17,14 @@ const heroIcons = [
 export default function HeroSection() {
     return (
         <section className="relative w-full overflow-hidden bg-white">
-            {/* Soft gradient glows */}
             
             <GradientGlow size="large" />
             <div className="relative mx-auto max-w-6xl px-6 md:px-10 py-10 flex justify-center">
                 <div className="w-full max-w-3xl text-center">
-                    {/* Heading */}
                     <h1 className="text-3xl md:text-5xl font-bold text-[#4285F4]">
                         Google Workspace
                     </h1>
 
-                    {/* Icons */}
                     <div className="mt-4 flex justify-center gap-4">
                         {heroIcons.map((icon, idx) => (
                             <a
@@ -42,7 +39,6 @@ export default function HeroSection() {
                         ))}
                     </div>
 
-                    {/* Subheading */}
                     <div className="mt-6 text-4xl font-bold leading-tight">
                         <p className="mb-1">
                             <span className="text-[#146DE1] text-3xl">किन केही</span> Businesses efficiently{" "}
@@ -57,7 +53,6 @@ export default function HeroSection() {
                         Reason luck, ads वा team size होइन. Reason हो right partner with right tools.
                     </p>
 
-                    {/* Offer info */}
                     <div className="mt-6 flex flex-col items-center gap-4">
                         <Image
                             src="/discount.png"
@@ -79,7 +74,6 @@ export default function HeroSection() {
                         <span> Workspace setup done right by Nest Nepal.</span>
                     </div>
 
-                    {/* Action buttons */}
                     <div className="mt-8 flex flex-col md:flex-row flex-wrap justify-center gap-4 w-full md:w-auto">
                         <Button variant="primary" className="w-full md:w-auto">
                             15 min · Free Demo
