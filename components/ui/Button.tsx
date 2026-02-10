@@ -18,7 +18,7 @@ export default function Button({
   href,
   ...props 
 }: ButtonProps) {
-  const baseStyles = "rounded-full font-medium transition inline-flex items-center justify-center gap: 2";
+  const baseStyles = "rounded-full font-medium transition inline-flex items-center cursor-pointer justify-center gap: 2";
   
   const variants = {
     primary: "bg-[#F25277] text-white hover:bg-pink-600",
