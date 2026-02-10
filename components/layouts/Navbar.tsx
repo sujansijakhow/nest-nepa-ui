@@ -37,17 +37,14 @@ export default function Navbar() {
     return (
         <header className="w-full bg-white shadow-md">
             <div className="mx-auto max-w-7xl px-4 py-3 flex flex-col md:grid md:grid-cols-3 md:items-center">
-                {/* Logo & Mobile Contact */}
                 <div className="flex justify-between md:justify-start mb-4 md:mb-0 items-center">
                     <img src="/logo.png" alt="logo" className="w-40 md:w-60" />
 
-                    {/* Mobile Contact */}
                     <div className="md:hidden">
                         <Link
                             href="#contact"
                             className="inline-flex items-center gap-2 rounded-[15px] border border-[#40C351] bg-[#40C35126] px-4 py-2 text-sm font-medium text-[#40C351] hover:bg-[#40C35133]"
                         >
-                            {/* Phone Icon */}
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
@@ -71,7 +68,6 @@ export default function Navbar() {
                     </div>
                 </div>
 
-                {/* Valentine Offer & Countdown */}
                 <div className="text-center">
                     <p
                         className="text-pink-500 font-semibold z-10"
@@ -96,7 +92,6 @@ export default function Navbar() {
                     </div>
                 </div>
 
-                {/* Desktop Contact */}
                 <div className="hidden md:flex justify-end">
                     <Link
                         href="#contact"
