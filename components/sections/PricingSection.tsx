@@ -60,11 +60,9 @@ export default function PricingSection() {
 
   return (
     <section className="relative w-full bg-white py-16 md:py-24 overflow-hidden">
-      {/* Gradient Background Circles */}
       <GradientGlow size="large" />
 
       <div className="mx-auto max-w-6xl px-4 md:px-10 relative z-10">
-        {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-medium mb-2">
             के <span className="text-[#4285F4]">Google Workspace</span>{" "}
@@ -81,7 +79,6 @@ export default function PricingSection() {
             Elevate र Empower गर्न
           </p>
 
-          {/* Workspace Icons */}
           <div className="flex justify-center gap-3 mt-6">
             {workspaceIcons.map((icon, index) => (
               <div key={index} className="w-6 h-6 relative">
@@ -98,7 +95,6 @@ export default function PricingSection() {
 
         {/* 3-Column Layout */}
         <div className="grid md:grid-cols-3 gap-6 md:gap-8">
-          {/* Pricing Card */}
           <div className="flex flex-col items-center md:border-r border-gray-300">
             <h3 className="text-2xl font-bold mb-6">Starter</h3>
             <div className="mb-6 flex flex-col gap-4 items-center">
@@ -155,7 +151,6 @@ export default function PricingSection() {
             </Button>
           </div>
 
-          {/* Storage & Communicate */}
           <div className="space-y-8 pl-6 md:pl-0">
             <div>
               <h4 className="font-bold text-lg mb-3">Storage</h4>
@@ -167,7 +162,6 @@ export default function PricingSection() {
             </div>
           </div>
 
-          {/* Collaborate & Control */}
           <div className="space-y-8 pl-6 md:pl-0">
             <div>
               <h4 className="font-bold text-lg mb-3">Collaborate</h4>
