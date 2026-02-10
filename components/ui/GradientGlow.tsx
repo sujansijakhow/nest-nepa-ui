@@ -3,10 +3,10 @@
 import React from "react";
 
 interface GradientGlowProps {
-  className?: string; // optional extra classes
-  leftGradient?: boolean; // show left gradient
-  rightGradient?: boolean; // show right gradient
-  size?: "small" | "medium" | "large"; // optional sizing preset
+  className?: string; 
+  leftGradient?: boolean; 
+  rightGradient?: boolean; 
+  size?: "small" | "medium" | "large"; 
 }
 
 export default function GradientGlow({
@@ -15,7 +15,6 @@ export default function GradientGlow({
   rightGradient = true,
   size = "medium",
 }: GradientGlowProps) {
-  // sizes for gradient circles
   const sizes = {
     small: { width: 500, height: 150 },
     medium: { width: 850, height: 150 },

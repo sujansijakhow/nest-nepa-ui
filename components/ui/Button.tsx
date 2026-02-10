@@ -42,7 +42,7 @@ export default function Button({
     );
   }
 
-  // Otherwise render as button
+  // Otherwise rendering as button
   return (
     <button className={classes} onClick={onClick} {...props}>
       {children}

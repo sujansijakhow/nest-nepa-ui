@@ -1,4 +1,3 @@
-// components/SolutionsSection.tsx
 import React from 'react';
 import Image from 'next/image';
 
@@ -49,7 +48,6 @@ export default function SolutionsSection() {
     return (
         <section className="bg-white py-16 md:py-24 px-6 md:px-12">
             <div className="max-w-7xl mx-auto">
-                {/* Header */}
                 <div className="text-center mb-12 md:mb-16">
                     <h2 className="text-4xl md:text-5xl font-medium mb-4">
                         <span className="block text-black">Solutions for businesses,</span>
@@ -62,11 +60,9 @@ export default function SolutionsSection() {
                     </p>
                 </div>
 
-                {/* Solution Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
                     {solutions.map((solution, index) => (
                         <div key={index} className="flex flex-col items-center text-center">
-                            {/* Image */}
                             <div className="relative w-full h-56 mb-6">
                                 <Image
                                     src={solution.image}
@@ -76,7 +72,6 @@ export default function SolutionsSection() {
                                 />
                             </div>
 
-                            {/* Content */}
                             <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
                                 {solution.title}
                             </h3>

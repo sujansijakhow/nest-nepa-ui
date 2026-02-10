@@ -21,9 +21,7 @@ const SalesContactSection = () => {
         <section className="w-full py-12 lg:py-16 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="bg-white rounded-2xl shadow-lg overflow-hidden grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    {/* Left Content */}
                     <div className="p-6 sm:p-8 lg:p-12 flex flex-col justify-center">
-                        {/* Workspace Icons */}
                         <div className="flex flex-wrap items-center gap-3 sm:gap-4 mb-6">
                             {workspaceIcons.map((icon, idx) => (
                                 <div key={idx} className="w-8 h-8 relative">
@@ -32,17 +30,14 @@ const SalesContactSection = () => {
                             ))}
                         </div>
 
-                        {/* Heading */}
                         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
                             Prefer to talk to sales directly?
                         </h2>
 
-                        {/* Description */}
                         <p className="text-gray-600 text-sm sm:text-base mb-6 sm:mb-8 leading-relaxed">
                             तपाईंको company को unique requirements अनुसार तयार गरिएको solutions सँग efficiency र collaboration maximize गर्नुहोस्।
                         </p>
 
-                        {/* Buttons */}
                         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                             <Button
                                 variant="secondary"
@@ -76,7 +71,6 @@ const SalesContactSection = () => {
                         </div>
                     </div>
 
-                    {/* Right Image */}
                     <div className="relative h-64 sm:h-80 lg:h-full min-h-[300px] overflow-hidden rounded-br-2xl lg:rounded-r-2xl lg:rounded-bl-none">
                         <Image
                             src="/rainbow.png"

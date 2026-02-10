@@ -18,7 +18,6 @@ export default function TrustSection() {
     return (
         <section className="bg-white py-12 md:py-16">
             <div className="max-w-7xl mx-auto px-4 md:px-10">
-                {/* Header */}
                 <div className="text-center mb-10">
                     <p className="text-gray-700 text-base md:text-lg leading-relaxed">
                         Trusted by 1,000+ Nepali businesses on their{" "}
@@ -29,7 +28,6 @@ export default function TrustSection() {
                     </p>
                 </div>
 
-                {/* Logos Grid */}
                 <div className="flex items-center justify-center gap-6 md:gap-10 overflow-x-auto scrollbar-hide py-4">
                     {logos.map((logo, index) => (
                         <div
