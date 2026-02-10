@@ -52,11 +52,9 @@ export default function FAQ() {
                     <span className="text-blue-600">(FAQs)</span>
                 </h2>
 
-                {/* FAQ list */}
                 <div className="divide-y divide-gray-200">
                     {faqData.map((faq, index) => (
                         <div key={index} className="py-5">
-                            {/* Question */}
                             <button
                                 onClick={() => toggle(index)}
                                 className="flex w-full items-center justify-between text-left"
@@ -71,7 +69,6 @@ export default function FAQ() {
                                 />
                             </button>
 
-                            {/* Answer */}
                             <div
                                 className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-40 mt-3' : 'max-h-0'
                                     }`}
