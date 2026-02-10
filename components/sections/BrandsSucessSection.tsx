@@ -60,11 +60,9 @@ export default function BrandsSuccessSection() {
 
   return (
     <section className="relative bg-white py-16 md:py-24 px-6 md:px-12 overflow-hidden">
-      {/* Gradient Background Circles */}
       <GradientGlow size='large' />
 
       <div className="max-w-7xl mx-auto relative z-10">
-        {/* Header */}
         <div className="text-center mb-12 md:mb-16">
           <h2 className="font-medium mb-4 text-center">
             <span className="block text-4xl">Brands using Google Workspace to</span>
@@ -79,23 +77,18 @@ export default function BrandsSuccessSection() {
           </div>
         </div>
 
-        {/* Content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
-          {/* Left: Orbit Icons */}
           <div className="relative h-80 md:h-[600px] flex items-center justify-center">
             <div className="relative w-full h-full max-w-[350px] md:max-w-[500px] max-h-[350px] md:max-h-[500px]">
-              {/* Orbit lines */}
               <div className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-52 h-52 md:w-80 md:h-80 border border-gray-300 opacity-70 rounded-full" />
               <div className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[480px] md:h-[480px] border border-gray-300 opacity-70 rounded-full" />
 
-              {/* Center Icon */}
               <div className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
                 <div className="w-12 h-12 md:w-20 md:h-20 relative">
                   <Image src={centerIcon.src} alt={centerIcon.name} fill className="object-contain" />
                 </div>
               </div>
 
-              {/* Desktop Orbits */}
               <div className="hidden md:block">
                 {orbitIcons.map((icon, index) => {
                   const { x, y } = getPosition(icon.orbit, icon.angle);
@@ -113,7 +106,6 @@ export default function BrandsSuccessSection() {
                 })}
               </div>
 
-              {/* Mobile Orbits */}
               <div className="md:hidden">
                 {orbitIcons.map((icon, index) => {
                   const { x, y } = getPosition(icon.orbit, icon.angle, true);
@@ -133,7 +125,6 @@ export default function BrandsSuccessSection() {
             </div>
           </div>
 
-          {/* Right: Feature List */}
           <div className="space-y-6">
             {features.map((feature, index) => (
               <div key={index} className={`border-l-4 pl-6 ${index === 0 ? 'border-blue-500' : 'border-gray-300'}`}>
