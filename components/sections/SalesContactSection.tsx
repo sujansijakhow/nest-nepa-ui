@@ -63,7 +63,7 @@ const SalesContactSection = () => {
 
                             <Button
                                 variant="secondary"
-                                className="rounded-xl bg-blue-50 text-blue-600 border border-blue-300"
+                                className="rounded-xl"
                                 onClick={handleCallClick}
                             >
                                 Call +977 98545435435
