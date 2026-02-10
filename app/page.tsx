@@ -7,6 +7,9 @@ import PricingSection from "@/components/sections/PricingSection";
 import FeaturesSection from "@/components/sections/FeaturesSection";
 import SolutionsSection from "@/components/sections/SolutionSection";
 import Footer from "@/components/layouts/Footer";
+import BrandsSuccessSection from "@/components/sections/BrandsSucessSection";
+import FAQSection from "@/components/sections/FAQSection";
+import SalesContactSection from "@/components/sections/SalesContactSection";
 
 export default function Home() {
   return (
@@ -18,6 +21,9 @@ export default function Home() {
       <PricingSection />
       <FeaturesSection />
       <SolutionsSection />
+      <BrandsSuccessSection />
+      <FAQSection />
+      <SalesContactSection />
       <Footer />
   
     </div>
