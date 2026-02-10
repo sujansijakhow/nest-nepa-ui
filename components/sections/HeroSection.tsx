@@ -76,7 +76,7 @@ export default function HeroSection() {
 
                     <div className="mt-8 flex flex-col md:flex-row flex-wrap justify-center gap-4 w-full md:w-auto">
                         <Button variant="primary" className="w-full md:w-auto">
-                            15 min · Free Demo
+                            15 min Free Demo
                         </Button>
                         <Button
                             variant="secondary"
