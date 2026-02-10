@@ -1,4 +1,3 @@
-// components/Footer.tsx
 import React from 'react';
 import Image from 'next/image';
 import { HiArrowUpRight } from 'react-icons/hi2';
@@ -11,7 +10,6 @@ export default function Footer() {
                 background: 'radial-gradient(circle at top left, #0234F8, #011F92)',
             }}
         >
-            {/* Decorative Grid Pattern */}
             <div className="absolute inset-0 opacity-5">
                 <div
                     className="absolute inset-0"
@@ -24,9 +22,7 @@ export default function Footer() {
             </div>
 
             <div className="relative max-w-7xl mx-auto px-4 md:px-12 py-6 md:py-8 z-10">
-                {/* Top Row */}
                 <div className="flex flex-col md:flex-row items-start justify-between gap-4 md:gap-0 mb-8 md:mb-24">
-                    {/* Logo */}
                     <div className="z-10">
                         <div className="relative w-28 h-8 md:w-40 md:h-10">
                             <Image
@@ -38,7 +34,6 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    {/* Contact Info */}
                     <div className="text-left md:text-right text-white text-sm md:text-base z-10 md:flex md:flex-col md:items-start">
                         <p className="font-medium mb-1">Nepal</p>
                         <p className="text-gray-100">Call us: +977 9851-160-1174</p>
@@ -47,7 +42,6 @@ export default function Footer() {
                     </div>
                 </div>
 
-                {/* Large Nest Nepal Text - Desktop */}
                 <div
                     className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-full pointer-events-none"
                     style={{ top: '30%' }}
@@ -69,7 +63,6 @@ export default function Footer() {
                     </h2>
                 </div>
 
-                {/* Large Nest Nepal Text - Mobile */}
                 <div className="block md:hidden absolute right-0 top-0 bottom-0 pointer-events-none z-0">
                     <div className="relative h-full flex items-end justify-end pr-4">
                         <h2
@@ -93,14 +86,11 @@ export default function Footer() {
                     </div>
                 </div>
 
-                {/* Bottom Row - Navigation */}
                 <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 md:gap-0 text-white mt-12">
-                    {/* Left: Google Workspace */}
                     <div className="text-sm md:text-base font-medium">
                         Google Workspace
                     </div>
 
-                    {/* Right: Other Nav Links + CTA */}
                     <div className="flex flex-col md:flex-row items-start md:items-center gap-3 md:mt-15 md:gap-8">
                         <span className="text-sm md:text-base font-medium">
                             Why Google Workspace?
