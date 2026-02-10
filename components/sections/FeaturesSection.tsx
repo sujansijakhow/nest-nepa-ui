@@ -66,7 +66,6 @@ export default function FeaturesSection() {
           <span className="text-[#4285F4]">Google Workspace</span>
         </h1>
 
-        {/* Feature Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-8 md:mb-12">
           {features.map((feature, idx) => (
             <div key={idx} className="text-center">
@@ -80,14 +79,12 @@ export default function FeaturesSection() {
           ))}
         </div>
 
-        {/* CTA Button */}
         <div className="flex justify-center mb-12 md:mb-16">
           <Button variant="secondary" className="flex items-center gap-2">
             Get a quotation <HiArrowUpRight className="h-4 w-4" />
           </Button>
         </div>
 
-        {/* Workspace Icons Grid */}
         <h2 className="text-xl md:text-2xl font-medium text-gray-900 mb-8">
           Google Workspace includes:
         </h2>
